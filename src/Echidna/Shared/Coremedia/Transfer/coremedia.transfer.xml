@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<transfers xmlns="spryker:transfer-01"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="spryker:transfer-01 http://static.spryker.com/transfer-01.xsd">
+
+    <transfer name="CmsSlotContentResponse">
+        <property name="content" type="string"/>
+    </transfer>
+
+    <transfer name="CmsSlotContentRequest">
+        <property name="cmsSlotKey" type="string"/>
+        <property name="params" type="array" singular="params"/>
+    </transfer>
+
+    <transfer name="CoremediaApiResponse">
+        <property name="isSuccessful" type="bool"/>
+        <property name="data" type="string"/>
+    </transfer>
+
+    <transfer name="CoremediaFragmentRequest">
+        <property name="store" type="string"/>
+        <property name="locale" type="string"/>
+        <property name="productId" type="string"/>
+        <property name="categoryId" type="string"/>
+        <property name="pageId" type="string"/>
+        <property name="placement" type="string"/>
+        <property name="view" type="string"/>
+    </transfer>
+
+    <transfer name="Store">
+        <property name="name" type="string"/>
+    </transfer>
+
+    <transfer name="CoremediaPlaceholder">
+        <property name="placeholderBody" type="string"/>
+        <property name="placeholderReplacement" type="string"/>
+        <property name="objectType" type="string"/>
+        <property name="renderType" type="string"/>
+        <property name="productId" type="string"/>
+        <property name="categoryId" type="string"/>
+        <property name="title" type="string"/>
+        <property name="keywords" type="string"/>
+        <property name="description" type="string"/>
+        <property name="pageName" type="string"/>
+        <property name="externalSeoSegment" type="string"/>
+    </transfer>
+
+    <transfer name="CategoryNodeStorage">
+        <property name="url" type="string"/>
+    </transfer>
+
+    <transfer name="Money">
+        <property name="amount" type="string"/>
+        <property name="currency" type="Currency"/>
+    </transfer>
+
+    <transfer name="CurrentProductPrice">
+        <property name="price" type="int"/>
+        <property name="currency" type="Currency"/>
+    </transfer>
+
+    <transfer name="Currency">
+    </transfer>
+
+    <transfer name="PriceProduct">
+        <property name="moneyValue" type="MoneyValue"/>
+    </transfer>
+
+    <transfer name="MoneyValue">
+        <property name="netAmount" type="int"/>
+    </transfer>
+
+</transfers>
